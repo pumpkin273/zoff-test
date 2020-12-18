@@ -49,6 +49,8 @@ select::-ms-expand {
   color: $zoffBlue;
   text-align: center;
   margin: 0 auto 25px;
+  width: 100%;
+	
   p {
     margin-bottom: 5px;
   }
@@ -56,6 +58,15 @@ select::-ms-expand {
 .searchResults__keyword {
   @include fontSize(20);
   font-weight: bold;
+}
+
+// form
+form {
+  width: 72%;
+  float: left;
+  border-right: 1px solid $lightGray;
+  box-sizing: border-box;
+  padding-right: 30px;
 }
 
 // refinement
@@ -267,7 +278,10 @@ select::-ms-expand {
 
 // contentsList
 .contentsList {
-  border-top: 1px solid $lightGray;
+  width: 25%;
+  padding-left: 30px;
+  float: left;
+	
   h2 {
     color: $zoffBlue;
     font-weight: normal;
@@ -278,11 +292,11 @@ select::-ms-expand {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+	flex-direction: column;
   }
   li {
-    flex-basis: 48%;
-    max-width: 48%;
-    margin: 0 0 60px;
+    margin: 0 0 30px;
+	min-height: 0%;
     a {
       color: #000;
       display: flex;
