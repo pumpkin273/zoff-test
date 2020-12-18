@@ -135,6 +135,8 @@ form {
     border: $zoffBlue solid 1px;
     position: relative;
     outline: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
   }
 }

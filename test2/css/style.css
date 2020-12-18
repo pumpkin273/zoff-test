@@ -115,6 +115,8 @@ form {
   border: #2299e1 solid 1px;
   position: relative;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
